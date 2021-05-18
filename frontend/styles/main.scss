@@ -1,0 +1,348 @@
+$playfair:'Playfair Display';
+$roboto:'Roboto',
+sans-serif;
+// warna
+$dark : #0D1B2B;
+$green : #58B862;
+
+.title-detail {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+.navbar {
+    min-height: 80px;
+    font-family: $roboto;
+    background: #0D1B2B !important;
+
+    .navbar-brand {
+        font-family: $playfair;
+        font-size: 24px;
+        letter-spacing: 1.5;
+    }
+
+    .navbar-nav {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+
+        .active {
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+
+    .btn-signup {
+        background: transparent;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    .btn-login {
+        background: #58B862;
+        border-radius: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+}
+
+.banner {
+    background: #0D1B2B;
+    margin-top: 80px;
+    max-height: 468px;
+
+    .carousel-control-next-icon {
+        background-image: url(/frontend/images/ic/arrow-right.svg);
+        background-size: 55px;
+        border-radius: 50%;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url(/frontend/images/ic/arrow-left.svg);
+        background-size: 55px;
+        border-radius: 50%;
+    }
+
+    .carousel-item {
+        h1 {
+            font-family: $playfair;
+            font-size: 48px;
+            letter-spacing: -1.5;
+        }
+
+        p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: justify;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+        }
+    }
+}
+
+.section-catatan-investor {
+    h2 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+    p.subtitle {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+
+    .btn-cari {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        :focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        button {
+            background-color: #58B862;
+            outline: 0;
+            border: 0;
+            width: 200px;
+            height: 44px;
+            left: 816px;
+            top: 697px;
+            border-radius: 10px;
+
+            // // font
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+    }
+
+    a.btn-buat {
+        width: 198px;
+        height: 50px;
+        left: 608px;
+        top: 781px;
+        background: #58B862;
+        border-radius: 15px;
+        padding: 12px 36px 12px 36px;
+        filter: drop-shadow(2px 5px 7px rgba(88, 184, 98, 0.47));
+        // font
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .card-catatan {
+        margin-top: 70px;
+
+        .card {
+            .card-title {
+                font-family: $playfair;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 1;
+            }
+
+            span.nama-penulis {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                // line-height: 16px;
+                letter-spacing: 0.02em;
+
+                color: #707070 !important;
+            }
+
+            .card-text {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                display: block;
+                display: -webkit-box;
+                max-width: 100%;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: justify;
+            }
+
+            .btn-baca {
+                height: 50px;
+                border: 2px solid #58B862;
+                border-radius: 5px;
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+            }
+
+            :hover {
+                background-color: #0D1B2B;
+                color: #fff;
+
+                .btn-baca {
+                    background-color: #58B862;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .page-link {
+        color: #58B862 !important;
+    }
+
+
+}
+
+// footer
+footer {
+    background-color: $dark;
+    padding: 30px 0px 30px 0px;
+
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+
+    .navbar-brand {
+        color: #FFFFFF;
+        font-family: $playfair;
+        font-size: 24px;
+
+    }
+
+    .nav-link {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        /* identical to box height, or 169% */
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+
+    .copyright {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        /* or 169% */
+
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+
+}
+
+// create-catatan.html
+.section-create-catatan {
+    margin-top: 100px;
+
+    .title {
+        h1 {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 27px;
+        }
+
+        p {
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+
+    .form-catatan {
+        font-family: $roboto;
+        margin-top: 70px;
+
+        label {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+    }
+
+    .btn-success {
+        background-color: $green !important;
+        outline: none;
+        border: none;
+
+        &:hover {
+            background-color: #266b2d !important;
+        }
+    }
+
+    .btn-batal {
+        border: 1.5px solid #58B862;
+
+        &:hover {
+            background: rgb(236, 236, 236) !important;
+        }
+    }
+}
