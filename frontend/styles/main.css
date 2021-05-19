@@ -326,15 +326,19 @@ footer .copyright {
   font-weight: 400;
 }
 
+.section-judul-detail {
+  margin-top: 80px;
+}
+
 @media only screen and (min-width: 1200px) {
   .section-judul-detail {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(/frontend/images/bg-detail.png) !important;
+    background-image: url(../images/bg-detail.png) !important;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   .section-judul-detail {
     background-color: #0D1B2B;
   }

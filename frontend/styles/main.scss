@@ -368,15 +368,16 @@ footer {
 }
 
 .section-judul-detail {
+    margin-top : 80px;
 
     @media only screen and (min-width: 1200px) {
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url(/frontend/images/bg-detail.png) !important;
+        background-image: url(../images/bg-detail.png) !important;
     }
 
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         background-color: $dark;
     }
 
