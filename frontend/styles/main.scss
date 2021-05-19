@@ -346,3 +346,110 @@ footer {
         }
     }
 }
+
+// detail-catatan.html
+.breadcrumb {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+
+    .breadcrumb-item {
+        a {
+            color: #58B862;
+            text-decoration: none;
+        }
+    }
+
+    .active {
+        color: #000 !important;
+        font-weight: 400;
+    }
+}
+
+.section-judul-detail {
+
+    @media only screen and (min-width: 1200px) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(/frontend/images/bg-detail.png) !important;
+    }
+
+
+    @media only screen and (max-width: 1024px) {
+        background-color: $dark;
+    }
+
+    img {
+        box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+    }
+
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        color: #E1E1E1;
+
+    }
+
+    h1 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 2px;
+
+        /* #FFFFFF */
+
+        color: #FFFFFF;
+    }
+
+    p.nama-penulis {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+
+        /* #FFFFFF */
+
+        color: #FFFFFF;
+
+    }
+
+    p.tanggal {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+
+        color: #A5A5A5;
+
+    }
+}
+
+.section-detail-catatan {
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 140%;
+        /* or 28px */
+
+        letter-spacing: 0.055em;
+
+        color: #000000;
+
+        text-align: justify;
+
+    }
+}

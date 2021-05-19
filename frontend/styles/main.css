@@ -308,4 +308,95 @@ footer .copyright {
 .section-create-catatan .btn-batal:hover {
   background: #ececec !important;
 }
+
+.breadcrumb {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: #58B862;
+  text-decoration: none;
+}
+
+.breadcrumb .active {
+  color: #000 !important;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-judul-detail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/frontend/images/bg-detail.png) !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-judul-detail {
+    background-color: #0D1B2B;
+  }
+}
+
+.section-judul-detail img {
+  -webkit-box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.section-judul-detail p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #E1E1E1;
+}
+
+.section-judul-detail h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 2px;
+  /* #FFFFFF */
+  color: #FFFFFF;
+}
+
+.section-judul-detail p.nama-penulis {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  /* #FFFFFF */
+  color: #FFFFFF;
+}
+
+.section-judul-detail p.tanggal {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #A5A5A5;
+}
+
+.section-detail-catatan p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+  letter-spacing: 0.055em;
+  color: #000000;
+  text-align: justify;
+}
 /*# sourceMappingURL=main.css.map */
