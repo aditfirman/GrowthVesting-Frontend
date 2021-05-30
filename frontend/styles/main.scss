@@ -5,6 +5,104 @@ sans-serif;
 $dark : #0D1B2B;
 $green : #58B862;
 
+*.card-catatan {
+    margin-top: 40px;
+
+    .card {
+        .card-title {
+            font-family: $playfair;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 1;
+        }
+
+        span.nama-penulis {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            // line-height: 16px;
+            letter-spacing: 0.02em;
+
+            color: #707070 !important;
+        }
+
+        .card-text {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            display: block;
+            display: -webkit-box;
+            max-width: 100%;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: justify;
+        }
+
+        .btn-baca {
+            height: 50px;
+            border: 2px solid #58B862;
+            border-radius: 5px;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        :hover {
+            background-color: #0D1B2B;
+            color: #fff;
+            border-radius: 2px;
+            transition: 200ms;
+
+            .btn-baca {
+                background-color: #58B862;
+                color: #fff;
+            }
+        }
+    }
+}
+
+*.btn-cari {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    :focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    button {
+        background-color: #58B862;
+        outline: 0;
+        border: 0;
+        width: 200px;
+        height: 44px;
+        left: 816px;
+        top: 697px;
+        border-radius: 10px;
+
+        // // font
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background-color: #58B862;
+        }
+        
+    }
+
+}
+
 .title-detail {
     font-family: 'Playfair Display';
     font-style: normal;
@@ -73,13 +171,13 @@ $green : #58B862;
     max-height: 468px;
 
     .carousel-control-next-icon {
-        background-image: url(/frontend/images/ic/arrow-right.svg);
+        background-image: url(../images/ic/arrow-right.svg);
         background-size: 55px;
         border-radius: 50%;
     }
 
     .carousel-control-prev-icon {
-        background-image: url(/frontend/images/ic/arrow-left.svg);
+        background-image: url(../images/ic/arrow-left.svg);
         background-size: 55px;
         border-radius: 50%;
     }
@@ -132,34 +230,6 @@ $green : #58B862;
         color: #000000;
     }
 
-    .btn-cari {
-        background: #FFFFFF;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-
-        :focus {
-            outline: none;
-            box-shadow: none;
-        }
-
-        button {
-            background-color: #58B862;
-            outline: 0;
-            border: 0;
-            width: 200px;
-            height: 44px;
-            left: 816px;
-            top: 697px;
-            border-radius: 10px;
-
-            // // font
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-    }
-
     a.btn-buat {
         width: 198px;
         height: 50px;
@@ -175,67 +245,6 @@ $green : #58B862;
         font-weight: 500;
         font-size: 16px;
         color: #FFFFFF;
-    }
-
-    .card-catatan {
-        margin-top: 70px;
-
-        .card {
-            .card-title {
-                font-family: $playfair;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 28px;
-                letter-spacing: 1;
-            }
-
-            span.nama-penulis {
-                font-family: $roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                // line-height: 16px;
-                letter-spacing: 0.02em;
-
-                color: #707070 !important;
-            }
-
-            .card-text {
-                font-family: $roboto;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                display: block;
-                display: -webkit-box;
-                max-width: 100%;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                text-align: justify;
-            }
-
-            .btn-baca {
-                height: 50px;
-                border: 2px solid #58B862;
-                border-radius: 5px;
-                font-family: $roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-            }
-
-            :hover {
-                background-color: #0D1B2B;
-                color: #fff;
-
-                .btn-baca {
-                    background-color: #58B862;
-                    color: #fff;
-                }
-            }
-        }
     }
 
     .page-link {
@@ -368,7 +377,13 @@ footer {
 }
 
 .section-judul-detail {
-    margin-top : 80px;
+    margin-top: 80px;
+
+    .kamus-investasi {
+        @media only screen and (min-width: 1200px) {
+            padding-left: 50px;
+        }
+    }
 
     @media only screen and (min-width: 1200px) {
         background-size: cover;
@@ -452,5 +467,89 @@ footer {
 
         text-align: justify;
 
+    }
+}
+
+.section-swipper {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        top: 40%;
+        right: 20px;
+        width: 35px !important;
+        height: 35px !important;
+        margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black !important;
+        padding: 21px;
+        background: white;
+        border-radius: 50%;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-family: swiper-icons;
+        font-size: 18px;
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+        color: #58B862;
+        font-weight: bold;
+    }
+
+    .title {
+        padding-top: 20px;
+        font-family: $playfair;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        /* identical to box height */
+
+        letter-spacing: 0.035em;
+
+        /* #0D1B2B */
+
+        color: #0D1B2B;
+    }
+
+    .sub-title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.035em;
+
+        /* #0D1B2B */
+
+        color: #0D1B2B;
+    }
+}
+
+.section-header-kamus {
+    margin-top: 80px;
+    background-color: #0D1B2B;
+    padding: 92px 345px 92px 345px;
+
+   .title {
+    color: #fff;
+    h1 {
+        font-family: $playfair;
+    }
+   }
+}
+
+.section-konten-kamus {
+    .page-link {
+        color: #58B862 !important;
     }
 }
