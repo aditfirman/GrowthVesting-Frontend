@@ -486,7 +486,8 @@ footer .copyright {
 .section-header-kamus {
   margin-top: 80px;
   background-color: #0D1B2B;
-  padding: 92px 345px 92px 345px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .section-header-kamus .title {
@@ -499,5 +500,71 @@ footer .copyright {
 
 .section-konten-kamus .page-link {
   color: #58B862 !important;
+}
+
+.section-prediksi {
+  margin-top: 80px;
+  background-color: #0D1B2B;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-prediksi p {
+  font-size: 20px;
+}
+
+.section-prediksi hr {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.section-prediksi .title {
+  color: #fff;
+}
+
+.section-prediksi .title h1 {
+  font-family: "Playfair Display";
+}
+
+.section-prediksi .deskripsi h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.section-prediksi .deskripsi p {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.section-prediksi label {
+  font-weight: 500;
+}
+
+.section-prediksi .btn-calculate {
+  background-color: #0D1B2B !important;
+  color: #fff;
+  font-weight: 500;
+}
+
+.section-prediksi .btn-watchlist {
+  background-color: #58B862 !important;
+  color: #fff;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
