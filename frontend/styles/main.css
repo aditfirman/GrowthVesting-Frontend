@@ -1,3 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+
 *.card-catatan {
   margin-top: 40px;
 }
@@ -571,7 +575,7 @@ footer .copyright {
 .section-faq {
   margin-top: 80px;
   padding-top: 135px;
-  padding-bottom: 235px;
+  padding-bottom: 135px;
 }
 
 .section-faq .accordion-button {
@@ -579,5 +583,25 @@ footer .copyright {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+/* Trick */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 /*# sourceMappingURL=main.css.map */
