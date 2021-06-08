@@ -98,7 +98,7 @@ $green : #58B862;
             color: #fff;
             background-color: #58B862;
         }
-        
+
     }
 
 }
@@ -535,18 +535,20 @@ footer {
     }
 }
 
-.section-header-kamus {
+.section-header-kamus
+    {
     margin-top: 80px;
     background-color: #0D1B2B;
     padding-top: 80px;
     padding-bottom: 80px;
 
-   .title {
-    color: #fff;
-    h1 {
-        font-family: $playfair;
+    .title {
+        color: #fff;
+
+        h1 {
+            font-family: $playfair;
+        }
     }
-   }
 }
 
 .section-konten-kamus {
@@ -560,6 +562,7 @@ footer {
     background-color: #0D1B2B;
     padding-top: 80px;
     padding-bottom: 80px;
+
     p {
         font-size: 20px;
     }
@@ -569,58 +572,74 @@ footer {
         border-radius: 50%;
     }
 
-   .title {
-    color: #fff;
-    h1 {
-        font-family: $playfair;
+    .title {
+        color: #fff;
+
+        h1 {
+            font-family: $playfair;
+        }
     }
-   }
 
-   .deskripsi {
-       h2 {
-        font-family: Playfair Display;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
-        /* identical to box height */
-        
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: capitalize;
-        
-        color: #FFFFFF;
-       }
-       p {
-           margin-top: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 28px;
-        /* or 156% */
-        
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
+    .deskripsi {
+        h2 {
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height */
 
-        text-align: justify;
-       }
-   }
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
 
-   label {
-       font-weight: 500;
-   }
+            color: #FFFFFF;
+        }
 
-   .btn-calculate {
-       background-color: #0D1B2B !important;
-       color: #fff;
-       font-weight: 500;
-   }
+        p {
+            margin-top: 20px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
 
-   .btn-watchlist {
-       background-color: #58B862 !important;
-       color: #fff;
-       font-weight: 500;
-   }
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+
+            text-align: justify;
+        }
+    }
+
+    label {
+        font-weight: 500;
+    }
+
+    .btn-calculate {
+        background-color: #0D1B2B !important;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .btn-watchlist {
+        background-color: #58B862 !important;
+        color: #fff;
+        font-weight: 500;
+    }
+
+}
+
+.section-faq {
+    margin-top: 80px;
+    padding-top: 135px;
+    padding-bottom: 235px;
+
+    .accordion-button {
+        background-color: #58B862 !important;
+        color: #fff;
+        font-family: $roboto;
+        font-weight: 500;
+    }
 
 }

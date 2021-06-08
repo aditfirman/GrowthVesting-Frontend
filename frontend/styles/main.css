@@ -567,4 +567,17 @@ footer .copyright {
   color: #fff;
   font-weight: 500;
 }
+
+.section-faq {
+  margin-top: 80px;
+  padding-top: 135px;
+  padding-bottom: 235px;
+}
+
+.section-faq .accordion-button {
+  background-color: #58B862 !important;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
 /*# sourceMappingURL=main.css.map */
